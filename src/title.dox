@@ -1,0 +1,65 @@
+/**
+ * @mainpage 3DViewer v2.0
+ *
+ * @brief 3DViewer is a program for visualizing wireframe models in three-dimensional space.
+ *
+ * @section introduction Introduction
+ * This document describes the design and implementation of the 3DViewer application (version 2.0).  The program is developed in C++17, adhering to Google Style guidelines, and utilizes the MVC pattern for a clean separation of concerns.  It supports loading OBJ models (vertices and faces only), performing affine transformations (translation, rotation, scaling), and features a graphical user interface for user interaction.  The program is designed to handle models with a large number of vertices (up to 1,000,000) without significant performance issues.
+ *
+ * @section features Features
+ *
+ * @subsection loading Loading Models
+ * - Loads wireframe models from OBJ files (supports vertices and faces only).
+ *
+ * @subsection transformations Affine Transformations
+ * - Translation along X, Y, and Z axes.
+ * - Rotation around X, Y, and Z axes.
+ * - Scaling by a specified factor.
+ *
+ * @subsection gui Graphical User Interface
+ * - Button for selecting a model file and a field to display the file name.
+ * - Area for visualizing the wireframe model.
+ * - Buttons and input fields for model transformation (translation, rotation, scaling).
+ * - Displays information about the loaded model (file name, number of vertices, and edges).
+ * - Supports configurable projection types (parallel and central).
+ * - Supports configurable edge and vertex properties (type, color, thickness, size, display style).
+ * - Allows for background color selection.
+ * - Persistent settings storage across program runs.
+ *
+ * @subsection performance Performance
+ * - Designed to handle models with up to 1,000,000 vertices without significant performance degradation.  (No UI freeze for more than 0.5 seconds).
+ *
+ * @subsection recording Recording Functionality
+ * - Saves rendered images to files in BMP and JPEG formats.
+ * - Records short screencasts (GIF animations) of user-performed affine transformations (640x480, 10fps, 5 seconds).
+ *
+ * @section design Design
+ *
+ * @subsection architecture Architecture
+ * The program follows the Model-View-Controller (MVC) pattern:
+ *   - **Model:** Manages the model data (vertices, faces, transformations).
+ *   - **View:** Renders the model in the GUI.
+ *   - **Controller:** Handles user input and updates the model and view.
+ *
+ * @subsection patterns Design Patterns
+ * The program utilizes at least three design patterns:
+ *   - **Singleton:** Controller
+ *   - **Facade:** Manipulation
+ *   - **Strategy:** Parser and Affine Transformations
+ *
+ * @subsection namespace Namespace
+ * All classes are implemented within the `s21` namespace.
+ *
+ * @section build Build Instructions
+ * - The code is located in the `src` directory.
+ * - The program is built using a Makefile with standard GNU targets (all, install, uninstall, clean, dvi, dist, tests).
+ * - Installation is performed to a 3DViewer2 directory.
+ *
+ * @section testing Testing
+ * - Unit tests cover modules related to model loading and affine transformations.
+ * 
+ * @section authors Authors
+ *
+ * Developed by the team: Alayaya Roslin, Waldon Eorlund, Edric Endell
+ *
+ */
