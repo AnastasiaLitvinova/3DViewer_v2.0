@@ -70,14 +70,14 @@ These design patterns significantly contribute to the application's modularity, 
 - The interface is available after selecting the correct model via the `Choose File` button:
   ![img_1][img_1]
 - It is also possible to save a screenshot to any selected folder:
-  ![img_2][img_2]
-  *Window after saving*
-  ![img_3][img_3]
+  ![img_2][img_2] \
+  *Window after saving* \
+  ![img_3][img_3] \
   *Screenshot taken*
 - After clicking the `GIF` button, any manipulations with the model will be recorded:
-  ![img_4][img_4]
-  *After the recording, a window will appear*
-  ![img_5][img_5]
+  ![img_4][img_4] \
+  *After the recording, a window will appear* \
+  ![img_5][img_5] \
   *The result of the manipulations is a `GIF`*
 
 [img_1]: images/img_1.png
