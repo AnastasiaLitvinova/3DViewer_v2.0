@@ -21,7 +21,7 @@
 - C++17
 - Qt6.
 
-****Installation (macOS):**
+## Installation (macOS)
 1. `git clone <repository_url>`
 2. `cd 3D Viewer_v2.0/src`
 3. `make`
