@@ -1,8 +1,6 @@
 # 3DViewer
 
-## Description
-
-- High-performance 3D renderer in C++17, Qt6 and MVC, supporting .obj files.
+> High-performance 3D renderer in C++17, Qt6 and MVC, supporting .obj files.
 
 ## Goal
 
